@@ -2,7 +2,7 @@
 XML2COCO & COCO2YOLO
 
 
-#USAGE of XML2COCO
+#**USAGE of XML2COCO**
 **python XML2COCO.py -j coco.json -o path_to_dir**
 
 #USAGE of COCO2YOLO
