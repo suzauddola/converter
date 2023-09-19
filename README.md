@@ -7,20 +7,21 @@
 ## XML-to-COCO 
 
 ```
-python XML2COCO.py -j output_file_name.json -o output_dir
+python XML2COCO.py -j file.json -o output_dir
 ```
 
 
 ## COCO-to-YOLO
-
 ```
-python COCO2YOLO4TEST.py -i img.jpg -t converted_to_yolo.txt 
-```
-
-#OR
-```
-python COCO2YOLO4TestWithLabels.py -i img.jpg -t converted_to_yolo.txt -l labels.txt
+python COCO2YOLO.py -j .\file.json -o .\output_dir\
 ```
 
+### Test The Operation
+```
+python COCO2YOLO4TEST.py -i img_file.jpg -t converted_to_yolo.txt 
+```
 
-
+### Test The Operation with the Name
+```
+python COCO2YOLO4TestWithLabelsName.py -i F:/images/img.jpg -t F:/Datasets/converted_to_yolo.txt -l F:/labels.txt
+```
