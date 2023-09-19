@@ -98,8 +98,8 @@ def convert(xml_list, xml_dir, json_file):
 if __name__ == '__main__':
     # xml_dir = 'data/wangjinhua_xml/'
     # img_dir = 'data/wangjinhua_image_split_train/'
-    xml_dir = 'F:/Datasets/Pest24/Annotations/'
-    img_dir = 'F:/Datasets/Pest24/JPEGImages/'
+    xml_dir = 'F:/Datasets/Annotations/'
+    img_dir = 'F:/Datasets/JPEGImages/'
     img_list = os.listdir(img_dir)
     img_list = [img.split('.')[0] for img in img_list]
     print(len(img_list))
@@ -108,6 +108,6 @@ if __name__ == '__main__':
     print(len(xml_list))
     xml_list = list(set(img_list).intersection(set(xml_list)))
     print(len(xml_list))
-    json_file = 'F:/Datasets/Pest24/new.json'
+    json_file = 'F:/Datasets/file.json'
 
     convert(xml_list, xml_dir, json_file)
